@@ -357,9 +357,11 @@ h1 em { font-style: italic; color: var(--coral); display: block; }
 .feat-icon {
   width: 56px; height: 56px; border-radius: 16px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.6rem; margin-bottom: 20px;
+  margin-bottom: 20px;
   background: var(--feat-icon-bg, rgba(79,168,213,0.12));
+  color: var(--feat-c1);
 }
+.feat-icon svg { width: 28px; height: 28px; flex-shrink: 0; }
 .feat-title { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
 .feat-desc { font-size: 0.88rem; color: var(--ink2); line-height: 1.65; }
 
