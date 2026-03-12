@@ -16,7 +16,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 
 /* ── MOCKUP ANIMATION ──────────────────────────── */
-// L'animació simula: dedo baixa → tap "Repetir toma" → 
+// L'animació simula: dedo baixa → tap "Repetir toma" →
 // el botó s'enfonsas → apareix toast → nou registre entra per dalt del log
 // → el comptador de tomes puja → el timer es reseteja → bucle
 
@@ -32,12 +32,22 @@ function runMockupAnimation() {
 
   if (!btn || !finger || !logList || !statVal || !timer) return;
 
+  // Respecta prefers-reduced-motion: no arrenca l'animació
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
   let feedCount = parseInt(statVal.textContent, 10) || 8;
   let timerMin  = 1;
   let timerSec  = 42;
+  let paused    = false;
+
+  // Pausa quan el tab no és visible (Page Visibility API)
+  document.addEventListener('visibilitychange', () => {
+    paused = document.hidden;
+  });
 
   // Tick the timer every second (visual only)
   setInterval(() => {
+    if (paused) return;
     if (timerSec === 0) {
       if (timerMin === 0) { timerMin = 2; timerSec = 59; return; }
       timerMin--;
@@ -52,6 +62,8 @@ function runMockupAnimation() {
 
   // Tap cycle
   function tapCycle() {
+    if (paused) return;
+
     // 1. Mostra el dit
     const btnRect  = btn.getBoundingClientRect();
     const phoneRect = btn.closest('.mockup-phone').getBoundingClientRect();
