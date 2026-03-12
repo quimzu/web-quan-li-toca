@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quan Li Toca — Registre intel·ligent per al teu bebè</title>
+  <meta name="description" content="Registra tomes, cacades, siestas i creixement. Sincronitzat amb la teva parella en temps real. Gratuït, sense anuncis, sense venda de dades."/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="landing.css"/>
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────── -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="/icons/icon-192.png" alt="QLT" onerror="this.style.display='none'">
+    Quan Li Toca
+  </a>
+  <a href="https://app.quantiloca.com" class="nav-cta">Accedir →</a>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span></span>
+      Gratuït · Sense anuncis · Privat
+    </div>
+    <h1>El registre del teu<em>bebè, en temps real.</em></h1>
+    <p class="hero-sub">
+      Tomes, cacades, siestas i creixement — tot en un lloc, sincronitzat
+      a l'instant amb la teva parella. Sense oblidar res a les 3 de la matinada.
+    </p>
+    <div class="hero-actions">
+      <a href="https://app.quantiloca.com" class="btn-primary">
+        🍼 Comença ara — és gratis
+      </a>
+      <a href="#features" class="btn-ghost">Veure funcionalitats</a>
+    </div>
+  </div>
+
+  <!-- Phone mockup -->
+  <div class="hero-mockup">
+    <div class="mockup-phone" style="position:relative">
+
+      <!-- Finger cursor (posicionat per JS) -->
+      <div class="mockup-finger" aria-hidden="true">👆</div>
+
+      <!-- Toast de confirmació -->
+      <div class="mockup-toast">✓ Toma registrada!</div>
+
+      <div class="mockup-screen">
+
+        <!-- Topbar -->
+        <div class="mockup-topbar">
+          <div class="mockup-logo-row">
+            <img src="/icons/icon-192.png" alt="" onerror="this.style.display='none'">
+            <span class="mockup-appname">Quan Li Toca</span>
+          </div>
+          <div class="mockup-dot"></div>
+        </div>
+
+        <!-- Hero card amb timer -->
+        <div class="mockup-hero-card">
+          <div class="mockup-baby-name">Lluc 🍼</div>
+          <div class="mockup-age">18 dies · 3.8 kg</div>
+          <div class="mockup-timer-label">Propera toma</div>
+          <div class="mockup-timer">1:42</div>
+          <div class="mockup-stats">
+            <div class="mockup-stat">
+              <div class="mockup-stat-val mockup-stat-feeds">8</div>
+              <div class="mockup-stat-lbl">tomes</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-val">3</div>
+              <div class="mockup-stat-lbl">cacades</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-val">4h</div>
+              <div class="mockup-stat-lbl">son</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botons d'acció -->
+        <div class="mockup-btns">
+          <div class="mockup-btn-big mockup-btn-quick">
+            <div class="mockup-btn-icon">⚡</div>
+            <div class="mockup-btn-label">Repetir toma</div>
+          </div>
+          <div class="mockup-btn-big green">
+            <div class="mockup-btn-icon">✏️</div>
+            <div class="mockup-btn-label">Nova toma</div>
+          </div>
+        </div>
+
+        <!-- Log d'últimes accions -->
+        <div class="mockup-log">
+          <div class="mockup-log-item">
+            <div class="mockup-log-dot" style="background:#4fa8d5"></div>
+            <div>
+              <div class="mockup-log-type">Toma</div>
+              <div class="mockup-log-detail">fórmula · 90ml</div>
+            </div>
+            <div class="mockup-log-time">09:30</div>
+          </div>
+          <div class="mockup-log-item">
+            <div class="mockup-log-dot" style="background:#a06030"></div>
+            <div>
+              <div class="mockup-log-type">Cacat</div>
+              <div class="mockup-log-detail">groga</div>
+            </div>
+            <div class="mockup-log-time">08:15</div>
+          </div>
+          <div class="mockup-log-item">
+            <div class="mockup-log-dot" style="background:#7060c0"></div>
+            <div>
+              <div class="mockup-log-type">Son</div>
+              <div class="mockup-log-detail">45 min</div>
+            </div>
+            <div class="mockup-log-time">07:00</div>
+          </div>
+        </div>
+
+        <!-- Bottom nav -->
+        <div class="mockup-nav">
+          <div class="mockup-nav-item">
+            <div class="mockup-nav-icon active">🏠</div>
+            <div class="mockup-nav-label active">Inici</div>
+          </div>
+          <div class="mockup-nav-item">
+            <div class="mockup-nav-icon">🕐</div>
+            <div class="mockup-nav-label">Historial</div>
+          </div>
+          <div class="mockup-nav-item">
+            <div class="mockup-nav-icon">📈</div>
+            <div class="mockup-nav-label">Creixement</div>
+          </div>
+          <div class="mockup-nav-item">
+            <div class="mockup-nav-icon">⚙️</div>
+            <div class="mockup-nav-label">Ajustos</div>
+          </div>
+        </div>
+
+      </div><!-- /mockup-screen -->
+    </div><!-- /mockup-phone -->
+  </div><!-- /hero-mockup -->
+</section>
+
+<!-- ── FEATURES ──────────────────────────────────── -->
+<section class="section" id="features">
+  <div class="reveal">
+    <div class="section-label">Funcionalitats</div>
+    <h2 class="section-title">Tot el que necessites,<em>res que no necessites.</em></h2>
+    <p class="section-sub">Dissenyat per pares que han viscut les nits amb un nadó a braços i un mòbil a la mà.</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feat-card reveal reveal-delay-1" style="--feat-c1:#4fa8d5;--feat-c2:#3daf85">
+      <div class="feat-icon" style="background:#e8f4fd">🍼</div>
+      <div class="feat-title">Registre de tomes en 1 tap</div>
+      <div class="feat-desc">Botó de "Repetir toma" que copia els últims ml i font automàticament. I botó manual per quan canvies. Tot sense menú, sense esperes.</div>
+    </div>
+    <div class="feat-card reveal reveal-delay-2" style="--feat-c1:#f59e0b;--feat-c2:#ef4444">
+      <div class="feat-icon" style="background:#fdf3cd">⏱️</div>
+      <div class="feat-title">Compte enrere fins la propera toma</div>
+      <div class="feat-desc">Sempre visible a la pantalla principal. Si ha passat l'hora, el comptador torna a pujar en vermell. Saps exactament quant fa que ha menjat.</div>
+    </div>
+    <div class="feat-card reveal reveal-delay-3" style="--feat-c1:#3daf85;--feat-c2:#4fa8d5">
+      <div class="feat-icon" style="background:#e4f5ef">👫</div>
+      <div class="feat-title">Sincronització en temps real</div>
+      <div class="feat-desc">Tu registres una toma des del sofà i la teva parella ho veu a l'instant des de l'habitació. Sense "creus que ja ha menjat?". Mai més.</div>
+    </div>
+    <div class="feat-card reveal reveal-delay-1" style="--feat-c1:#8b5cf6;--feat-c2:#4fa8d5">
+      <div class="feat-icon" style="background:#f3e8ff">💩</div>
+      <div class="feat-title">Cacades, son i medicaments</div>
+      <div class="feat-desc">Registre complet amb color, tipus i notes. Per al pediatra, per a vosaltres, per entendre patrons. Filtrat per dia i per tipus.</div>
+    </div>
+    <div class="feat-card reveal reveal-delay-2" style="--feat-c1:#3daf85;--feat-c2:#22c55e">
+      <div class="feat-icon" style="background:#e4f5ef">📈</div>
+      <div class="feat-title">Corba de creixement OMS</div>
+      <div class="feat-desc">El pes del teu bebè plotejat sobre els percentils de l'OMS. Veus d'un cop d'ull on es troba. I càlcul automàtic de ml recomanats per fórmula.</div>
+    </div>
+    <div class="feat-card reveal reveal-delay-3" style="--feat-c1:#f59e0b;--feat-c2:#3daf85">
+      <div class="feat-icon" style="background:#fff8e4">✏️</div>
+      <div class="feat-title">Edició i historial complet</div>
+      <div class="feat-desc">Vas apuntar malament l'hora? Edita-ho. Vols veure tot el que ha passat l'última setmana? Historial filtrable per tipus i dies, amb estadístiques.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ───────────────────────────────── -->
+<section class="how-section">
+  <div class="how-inner">
+    <div class="reveal">
+      <div class="section-label">Com funciona</div>
+      <h2 class="section-title">Llest en <em>menys d'un minut.</em></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.55)">Sense instal·lació, sense targeta de crèdit, sense configuració complicada.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal reveal-delay-1">
+        <div class="step-num">01</div>
+        <div class="step-icon">📧</div>
+        <div class="step-title">Entra amb el teu email</div>
+        <div class="step-desc">Codi de 6 dígits al correu. Sense contrasenya que recordar. Primer accés en 30 segons.</div>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-num">02</div>
+        <div class="step-icon">👶</div>
+        <div class="step-title">Crea el perfil del bebè</div>
+        <div class="step-desc">Nom, data de naixement i sexe. La corba de creixement es configura sola.</div>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-num">03</div>
+        <div class="step-icon">🔗</div>
+        <div class="step-title">Comparteix amb la parella</div>
+        <div class="step-desc">Codi de 6 caràcters. L'altra persona entra, introdueix el codi i ja veieu el mateix en temps real.</div>
+      </div>
+      <div class="step reveal reveal-delay-4">
+        <div class="step-num">04</div>
+        <div class="step-icon">📱</div>
+        <div class="step-title">Instal·la com a app</div>
+        <div class="step-desc">Safari → Compartir → Afegir a pantalla d'inici. Funciona com una app nativa, fins i tot sense connexió.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── REALTIME ───────────────────────────────────── -->
+<section class="realtime-section">
+  <div class="realtime-inner">
+    <div class="reveal">
+      <div class="section-label">Sincronització</div>
+      <h2 class="section-title">Els dos ho veieu<em>a la vegada.</em></h2>
+      <p class="section-sub">Quan l'un registra una toma, l'altre ho veu en menys d'un segon. Sense actualitzar, sense esperar. Realtime real.</p>
+      <div style="margin-top:28px;display:flex;flex-direction:column;gap:12px">
+        <div class="pill" style="justify-content:flex-start;width:fit-content">
+          <div class="pill-dot"></div>
+          Actualització instantània entre dispositius
+        </div>
+        <div class="pill" style="justify-content:flex-start;width:fit-content">
+          <div class="pill-dot"></div>
+          Funciona en iOS, Android i web
+        </div>
+        <div class="pill" style="justify-content:flex-start;width:fit-content">
+          <div class="pill-dot"></div>
+          Reconexió automàtica si es perd la senyal
+        </div>
+      </div>
+    </div>
+    <div class="realtime-visual reveal reveal-delay-2">
+      <div class="phone-mini">
+        <div class="phone-mini-screen">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+            <div class="pms-bar blue" style="width:50%;height:8px"></div>
+            <div class="pms-dot green"></div>
+          </div>
+          <div class="pms-card">
+            <div style="font-family:'DM Mono',monospace;font-size:0.7rem;color:#4fa8d5;margin-bottom:4px">1:42</div>
+            <div class="pms-bar" style="width:80%;margin-bottom:3px"></div>
+            <div class="pms-bar" style="width:50%"></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-top:4px">
+            <div style="background:rgba(255,255,255,0.05);border-radius:6px;height:20px"></div>
+            <div style="background:rgba(255,255,255,0.05);border-radius:6px;height:20px"></div>
+          </div>
+          <div style="font-size:0.5rem;color:rgba(255,255,255,0.3);text-align:center;margin-top:6px">Tu 📍</div>
+        </div>
+      </div>
+      <div class="sync-arrow">⇄</div>
+      <div class="phone-mini">
+        <div class="phone-mini-screen">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+            <div class="pms-bar blue" style="width:50%;height:8px"></div>
+            <div class="pms-dot blue"></div>
+          </div>
+          <div class="pms-card">
+            <div style="font-family:'DM Mono',monospace;font-size:0.7rem;color:#4fa8d5;margin-bottom:4px">1:42</div>
+            <div class="pms-bar" style="width:80%;margin-bottom:3px"></div>
+            <div class="pms-bar" style="width:50%"></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-top:4px">
+            <div style="background:rgba(255,255,255,0.05);border-radius:6px;height:20px"></div>
+            <div style="background:rgba(255,255,255,0.05);border-radius:6px;height:20px"></div>
+          </div>
+          <div style="font-size:0.5rem;color:rgba(255,255,255,0.3);text-align:center;margin-top:6px">Parella 📍</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRIVACY ────────────────────────────────────── -->
+<section class="privacy-section">
+  <div class="privacy-inner">
+    <div class="reveal">
+      <div class="section-label" style="color:var(--green)">Privacitat</div>
+      <h2 class="section-title">Les dades del teu bebè<em>són teves.</em></h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">Les dades de salut del teu fill mereixen el màxim respecte. Cap anunci, cap venda de dades, cap sorpresa.</p>
+    </div>
+    <div class="privacy-pills reveal reveal-delay-1">
+      <div class="pill"><div class="pill-dot"></div>Sense anuncis, mai</div>
+      <div class="pill"><div class="pill-dot"></div>Dades xifrades (TLS + AES-256)</div>
+      <div class="pill"><div class="pill-dot"></div>Accés exclusiu de la teva família</div>
+      <div class="pill"><div class="pill-dot"></div>Exporta les teves dades quan vulguis</div>
+      <div class="pill"><div class="pill-dot"></div>Elimina el compte i tot s'esborra</div>
+      <div class="pill"><div class="pill-dot"></div>Compleix RGPD · dades de salut</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA FINAL ──────────────────────────────────── -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="reveal">
+      <div class="section-label" style="text-align:center">Comença avui</div>
+      <h2 class="section-title">Perquè les 3h<em>ja són prou difícils.</em></h2>
+      <p class="section-sub" style="text-align:center">Gratuït, sense instal·lació, sense targeta de crèdit. Tens un bebè, no tens temps.</p>
+      <div style="display:flex;justify-content:center;margin-top:40px">
+        <a href="https://app.quantiloca.com" class="btn-primary" style="font-size:1.05rem;padding:16px 36px">
+          🍼 Accedir a Quan Li Toca
+        </a>
+      </div>
+      <p style="margin-top:16px;font-size:0.8rem;color:var(--ink3);text-align:center">
+        Ja usat per pares des del primer dia 🥰
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer>
+  <div class="footer-logo">Quan Li Toca</div>
+  <div>Fet amb ❤️ per pares, per a pares.</div>
+  <div>
+    <a href="https://app.quantiloca.com">Accedir</a>
+    &nbsp;·&nbsp;
+    <a href="https://app.quantiloca.com/#privacy">Privacitat</a>
+  </div>
+</footer>
+
+<script src="landing.js"></script>
+</body>
+</html>
