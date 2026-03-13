@@ -44,7 +44,14 @@
     <img src="/icons/icon-192.png" alt="QLT" onerror="this.style.display='none'">
     Quan Li Toca
   </a>
-  <a href="https://app.quantiloca.com" class="nav-cta">Accedir →</a>
+  <div style="display:flex;align-items:center;gap:12px">
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="ca">CA</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <a href="https://app.quantiloca.com" class="nav-cta" data-i18n="nav_cta">Accedir →</a>
+  </div>
 </nav>
 
 <!-- ── HERO ─────────────────────────────────────── -->
@@ -57,34 +64,27 @@
   <div class="hero-content">
     <div class="hero-badge">
       <span></span>
-      Gratuït · Sense anuncis · Privat
+      <span data-i18n="badge">Gratuït · Sense anuncis · Privat</span>
     </div>
-    <h1>El registre del teu<em>bebè, en temps real.</em></h1>
-    <p class="hero-sub">
+    <h1 data-i18n-html="h1">El registre del teu<em>bebè, en temps real.</em></h1>
+    <p class="hero-sub" data-i18n="hero_sub">
       Tomes, cacades, siestas i creixement — tot en un lloc, sincronitzat
       a l'instant amb la teva parella. Sense oblidar res a les 3 de la matinada.
     </p>
     <div class="hero-actions">
-      <a href="https://app.quantiloca.com" class="btn-primary">
+      <a href="https://app.quantiloca.com" class="btn-primary" data-i18n="cta_hero">
         🍼 Comença ara — és gratis
       </a>
-      <a href="#features" class="btn-ghost">Veure funcionalitats</a>
+      <a href="#features" class="btn-ghost" data-i18n="cta_ghost">Veure funcionalitats</a>
     </div>
   </div>
 
   <!-- Phone mockup -->
   <div class="hero-mockup">
     <div class="mockup-phone" style="position:relative">
-
-      <!-- Finger cursor (posicionat per JS) -->
       <div class="mockup-finger" aria-hidden="true">👆</div>
-
-      <!-- Toast de confirmació -->
       <div class="mockup-toast">✓ Toma registrada!</div>
-
       <div class="mockup-screen">
-
-        <!-- Topbar -->
         <div class="mockup-topbar">
           <div class="mockup-logo-row">
             <img src="/icons/icon-192.png" alt="" onerror="this.style.display='none'">
@@ -92,8 +92,6 @@
           </div>
           <div class="mockup-dot"></div>
         </div>
-
-        <!-- Hero card amb timer -->
         <div class="mockup-hero-card">
           <div class="mockup-baby-name">Lluc 🍼</div>
           <div class="mockup-age">18 dies · 3.8 kg</div>
@@ -114,8 +112,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Botons d'acció -->
         <div class="mockup-btns">
           <div class="mockup-btn-big mockup-btn-quick">
             <div class="mockup-btn-icon">⚡</div>
@@ -126,8 +122,6 @@
             <div class="mockup-btn-label">Nova toma</div>
           </div>
         </div>
-
-        <!-- Log d'últimes accions -->
         <div class="mockup-log">
           <div class="mockup-log-item">
             <div class="mockup-log-dot" style="background:#4fa8d5"></div>
@@ -154,8 +148,6 @@
             <div class="mockup-log-time">07:00</div>
           </div>
         </div>
-
-        <!-- Bottom nav -->
         <div class="mockup-nav">
           <div class="mockup-nav-item">
             <div class="mockup-nav-icon active">🏠</div>
@@ -174,87 +166,131 @@
             <div class="mockup-nav-label">Ajustos</div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      </div><!-- /mockup-screen -->
-    </div><!-- /mockup-phone -->
-  </div><!-- /hero-mockup -->
+<!-- ── STORY ───────────────────────────────────────── -->
+<section class="story-section">
+  <div class="story-inner">
+    <div class="reveal" style="text-align:center;max-width:680px;margin:0 auto 64px">
+      <div class="section-label" data-i18n="story_label">La nostra història</div>
+      <h2 class="section-title" data-i18n-html="story_title">Perquè les <em>primeres setmanes</em> ho canvien tot.</h2>
+      <p class="section-sub" style="margin:0 auto" data-i18n="story_sub">Vam crear Quan Li Toca perquè el naixement del nostre fill ens va fer adonar que no existia cap app senzilla, gratuïta i en temps real per a parelles amb un nadó.</p>
+    </div>
+    <div class="story-grid">
+
+      <div class="story-card reveal reveal-delay-1">
+        <div class="story-photo">
+          <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&h=500&q=80"
+               alt="Pare esgotament de nit amb el bebè" loading="lazy">
+          <div class="story-kicker" data-i18n="story1_kicker">Nit #1</div>
+        </div>
+        <div class="story-body">
+          <h3 data-i18n="story1_title">Esgotament i amor barrejats</h3>
+          <p data-i18n="story1_body">Li ha menjat fa 40 minuts o fa 2 hores? A les 4 de la matinada, el cervell no funciona. Necessitaves una app, no un bloc de notes.</p>
+        </div>
+      </div>
+
+      <div class="story-card reveal reveal-delay-2">
+        <div class="story-photo">
+          <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=800&h=500&q=80"
+               alt="Parella mirant el mòbil amb el bebè" loading="lazy">
+          <div class="story-kicker" data-i18n="story2_kicker">Setmana #2</div>
+        </div>
+        <div class="story-body">
+          <h3 data-i18n="story2_title">Dos pares, dos mòbils, un bebè</h3>
+          <p data-i18n="story2_body">Tu alletaves al sofà. Jo dormia a l'habitació. Ens enviàvem WhatsApps per saber si havia menjat. Hi havia d'haver una manera millor.</p>
+        </div>
+      </div>
+
+      <div class="story-card reveal reveal-delay-3">
+        <div class="story-photo">
+          <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=800&h=500&q=80"
+               alt="Mare donant el biberó al bebè amb mòbil a la mà" loading="lazy">
+          <div class="story-kicker story-kicker-now" data-i18n="story3_kicker">Ara</div>
+        </div>
+        <div class="story-body">
+          <h3 data-i18n="story3_title">Tan simple que funciona a les 3h</h3>
+          <p data-i18n="story3_body">Un tap per registrar una toma. La teva parella ho veu a l'instant. El pediatre veu l'historial. Tu dorms tranquil.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- ── FEATURES ──────────────────────────────────── -->
 <section class="section" id="features">
   <div class="reveal">
-    <div class="section-label">Funcionalitats</div>
-    <h2 class="section-title">Tot el que necessites,<em>res que no necessites.</em></h2>
-    <p class="section-sub">Dissenyat per pares que han viscut les nits amb un nadó a braços i un mòbil a la mà.</p>
+    <div class="section-label" data-i18n="feat_label">Funcionalitats</div>
+    <h2 class="section-title" data-i18n-html="feat_title">Tot el que necessites,<em>res que no necessites.</em></h2>
+    <p class="section-sub" data-i18n="feat_sub">Dissenyat per pares que han viscut les nits amb un nadó a braços i un mòbil a la mà.</p>
   </div>
 
   <div class="features-grid">
-    <div class="feat-card reveal reveal-delay-1" style="--feat-c1:#ff6b6b;--feat-c2:#fb923c;--feat-bg:#fff3f3;--feat-icon-bg:#ffe4e4">
-      <div class="feat-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M8 3h8"/>
-          <path d="M10 3v1.5A3.5 3.5 0 0 0 8 8v10a3 3 0 0 0 6 0V8a3.5 3.5 0 0 0-2-3.14V3"/>
-          <line x1="8" y1="11" x2="16" y2="11"/>
-        </svg>
+
+    <div class="feat-card reveal reveal-delay-1" style="--feat-c1:#ff6b6b;--feat-c2:#fb923c">
+      <div class="feat-photo">
+        <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&h=280&q=80" alt="Mare donant el biberó al bebè de nit" loading="lazy">
       </div>
-      <div class="feat-title">Registre de tomes en 1 tap</div>
-      <div class="feat-desc">Botó de "Repetir toma" que copia els últims ml i font automàticament. I botó manual per quan canvies. Tot sense menú, sense esperes.</div>
-    </div>
-    <div class="feat-card reveal reveal-delay-2" style="--feat-c1:#fbbf24;--feat-c2:#fb923c;--feat-bg:#fffbec;--feat-icon-bg:#fef3c7">
-      <div class="feat-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="13" r="8"/>
-          <path d="M12 9v4l3 3"/>
-          <path d="M9.5 2.5h5M12 2v2"/>
-        </svg>
+      <div class="feat-body">
+        <div class="feat-title" data-i18n="feat1_title">Registre de tomes en 1 tap</div>
+        <div class="feat-desc" data-i18n="feat1_desc">Són les 3h. No recordes si el biberó era de 80 o 90ml. Amb un tap guardes hora, quantitat i font. L'app recorda per tu.</div>
       </div>
-      <div class="feat-title">Compte enrere fins la propera toma</div>
-      <div class="feat-desc">Sempre visible a la pantalla principal. Si ha passat l'hora, el comptador torna a pujar en vermell. Saps exactament quant fa que ha menjat.</div>
     </div>
-    <div class="feat-card reveal reveal-delay-3" style="--feat-c1:#2dd4bf;--feat-c2:#4fa8d5;--feat-bg:#f0fdfb;--feat-icon-bg:#ccfbf1">
-      <div class="feat-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M17 1l4 4-4 4"/>
-          <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
-          <path d="M7 23l-4-4 4-4"/>
-          <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
-        </svg>
+
+    <div class="feat-card reveal reveal-delay-2" style="--feat-c1:#fbbf24;--feat-c2:#fb923c">
+      <div class="feat-photo">
+        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&h=280&q=80" alt="Pare cansat mirant el mòbil de nit" loading="lazy">
       </div>
-      <div class="feat-title">Sincronització en temps real</div>
-      <div class="feat-desc">Tu registres una toma des del sofà i la teva parella ho veu a l'instant des de l'habitació. Sense "creus que ja ha menjat?". Mai més.</div>
-    </div>
-    <div class="feat-card reveal reveal-delay-1" style="--feat-c1:#a78bfa;--feat-c2:#4fa8d5;--feat-bg:#faf5ff;--feat-icon-bg:#ede9fe">
-      <div class="feat-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
-          <rect x="9" y="3" width="6" height="4" rx="1"/>
-          <line x1="9" y1="12" x2="15" y2="12"/>
-          <line x1="9" y1="16" x2="13" y2="16"/>
-        </svg>
+      <div class="feat-body">
+        <div class="feat-title" data-i18n="feat2_title">Compte enrere fins la propera toma</div>
+        <div class="feat-desc" data-i18n="feat2_desc">Ha menjat fa 47 minuts? La propera toma sempre visible. Si s'ha passat, el comptador puja en vermell. Sense càlculs mentals a mitjanit.</div>
       </div>
-      <div class="feat-title">Cacades, son i medicaments</div>
-      <div class="feat-desc">Registre complet amb color, tipus i notes. Per al pediatra, per a vosaltres, per entendre patrons. Filtrat per dia i per tipus.</div>
     </div>
-    <div class="feat-card reveal reveal-delay-2" style="--feat-c1:#3daf85;--feat-c2:#22c55e;--feat-bg:#f0fdf6;--feat-icon-bg:#dcfce7">
-      <div class="feat-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
-          <polyline points="16 7 22 7 22 13"/>
-        </svg>
+
+    <div class="feat-card reveal reveal-delay-3" style="--feat-c1:#2dd4bf;--feat-c2:#4fa8d5">
+      <div class="feat-photo">
+        <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=600&h=280&q=80" alt="Parella amb el seu nadó" loading="lazy">
       </div>
-      <div class="feat-title">Corba de creixement OMS</div>
-      <div class="feat-desc">El pes del teu bebè plotejat sobre els percentils de l'OMS. Veus d'un cop d'ull on es troba. I càlcul automàtic de ml recomanats per fórmula.</div>
-    </div>
-    <div class="feat-card reveal reveal-delay-3" style="--feat-c1:#fb923c;--feat-c2:#fbbf24;--feat-bg:#fff8f0;--feat-icon-bg:#fed7aa">
-      <div class="feat-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 20h9"/>
-          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
-        </svg>
+      <div class="feat-body">
+        <div class="feat-title" data-i18n="feat3_title">Sincronització en temps real</div>
+        <div class="feat-desc" data-i18n="feat3_desc">Tu al sofà, la teva parella a l'habitació. Ella registra una toma i tu ja ho veus. Sense WhatsApps, sense crits, sense "ja ha menjat?".</div>
       </div>
-      <div class="feat-title">Edició i historial complet</div>
-      <div class="feat-desc">Vas apuntar malament l'hora? Edita-ho. Vols veure tot el que ha passat l'última setmana? Historial filtrable per tipus i dies, amb estadístiques.</div>
     </div>
+
+    <div class="feat-card reveal reveal-delay-1" style="--feat-c1:#a78bfa;--feat-c2:#4fa8d5">
+      <div class="feat-photo">
+        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600&h=280&q=80" alt="Bebè dormint plàcidament" loading="lazy">
+      </div>
+      <div class="feat-body">
+        <div class="feat-title" data-i18n="feat4_title">Cacades, son i medicaments</div>
+        <div class="feat-desc" data-i18n="feat4_desc">El pediatra pregunta quantes vegades ha cagat. Obres l'historial: 14 cops, color groc, consistència normal. Tot registrat en 2 dits.</div>
+      </div>
+    </div>
+
+    <div class="feat-card reveal reveal-delay-2" style="--feat-c1:#3daf85;--feat-c2:#22c55e">
+      <div class="feat-photo">
+        <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f004?auto=format&fit=crop&w=600&h=280&q=80" alt="Bebè al pediatra, control de pes" loading="lazy">
+      </div>
+      <div class="feat-body">
+        <div class="feat-title" data-i18n="feat5_title">Corba de creixement OMS</div>
+        <div class="feat-desc" data-i18n="feat5_desc">3,2 kg al néixer. 4,8 kg a les 6 setmanes. La gràfica dels percentils de l'OMS actualitzada a cada pesada. I ml recomanats per fórmula calculats automàticament.</div>
+      </div>
+    </div>
+
+    <div class="feat-card reveal reveal-delay-3" style="--feat-c1:#fb923c;--feat-c2:#fbbf24">
+      <div class="feat-photo">
+        <img src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?auto=format&fit=crop&w=600&h=280&q=80" alt="Mare consultant l'app al mòbil" loading="lazy">
+      </div>
+      <div class="feat-body">
+        <div class="feat-title" data-i18n="feat6_title">Edició i historial complet</div>
+        <div class="feat-desc" data-i18n="feat6_desc">Vas posar 14:00 però eren les 15:00? Edita en un segon. Historial de tota la setmana, filtrat per tipus, per hores, per dies.</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -262,34 +298,34 @@
 <section class="how-section">
   <div class="how-inner">
     <div class="reveal">
-      <div class="section-label">Com funciona</div>
-      <h2 class="section-title">Llest en <em>menys d'un minut.</em></h2>
-      <p class="section-sub" style="color:rgba(255,255,255,0.55)">Sense instal·lació, sense targeta de crèdit, sense configuració complicada.</p>
+      <div class="section-label" data-i18n="how_label">Com funciona</div>
+      <h2 class="section-title" data-i18n-html="how_title">Llest en <em>menys d'un minut.</em></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.55)" data-i18n="how_sub">Sense instal·lació, sense targeta de crèdit, sense configuració complicada.</p>
     </div>
     <div class="steps">
       <div class="step reveal reveal-delay-1">
         <div class="step-num">01</div>
         <div class="step-icon">📧</div>
-        <div class="step-title">Entra amb el teu email</div>
-        <div class="step-desc">Codi de 6 dígits al correu. Sense contrasenya que recordar. Primer accés en 30 segons.</div>
+        <div class="step-title" data-i18n="step1_title">Entra amb el teu email</div>
+        <div class="step-desc" data-i18n="step1_desc">Codi de 6 dígits al correu. Sense contrasenya que recordar. Primer accés en 30 segons.</div>
       </div>
       <div class="step reveal reveal-delay-2">
         <div class="step-num">02</div>
         <div class="step-icon">👶</div>
-        <div class="step-title">Crea el perfil del bebè</div>
-        <div class="step-desc">Nom, data de naixement i sexe. La corba de creixement es configura sola.</div>
+        <div class="step-title" data-i18n="step2_title">Crea el perfil del bebè</div>
+        <div class="step-desc" data-i18n="step2_desc">Nom, data de naixement i sexe. La corba de creixement es configura sola.</div>
       </div>
       <div class="step reveal reveal-delay-3">
         <div class="step-num">03</div>
         <div class="step-icon">🔗</div>
-        <div class="step-title">Comparteix amb la parella</div>
-        <div class="step-desc">Codi de 6 caràcters. L'altra persona entra, introdueix el codi i ja veieu el mateix en temps real.</div>
+        <div class="step-title" data-i18n="step3_title">Comparteix amb la parella</div>
+        <div class="step-desc" data-i18n="step3_desc">Codi de 6 caràcters. L'altra persona entra, introdueix el codi i ja veieu el mateix en temps real.</div>
       </div>
       <div class="step reveal reveal-delay-4">
         <div class="step-num">04</div>
         <div class="step-icon">📱</div>
-        <div class="step-title">Instal·la com a app</div>
-        <div class="step-desc">Safari → Compartir → Afegir a pantalla d'inici. Funciona com una app nativa, fins i tot sense connexió.</div>
+        <div class="step-title" data-i18n="step4_title">Instal·la com a app</div>
+        <div class="step-desc" data-i18n="step4_desc">Safari → Compartir → Afegir a pantalla d'inici. Funciona com una app nativa, fins i tot sense connexió.</div>
       </div>
     </div>
   </div>
@@ -299,21 +335,21 @@
 <section class="realtime-section">
   <div class="realtime-inner">
     <div class="reveal">
-      <div class="section-label">Sincronització</div>
-      <h2 class="section-title">Els dos ho veieu<em>a la vegada.</em></h2>
-      <p class="section-sub">Quan l'un registra una toma, l'altre ho veu en menys d'un segon. Sense actualitzar, sense esperar. Realtime real.</p>
+      <div class="section-label" data-i18n="rt_label">Sincronització</div>
+      <h2 class="section-title" data-i18n-html="rt_title">Els dos ho veieu<em>a la vegada.</em></h2>
+      <p class="section-sub" data-i18n="rt_sub">Quan l'un registra una toma, l'altre ho veu en menys d'un segon. Sense actualitzar, sense esperar. Realtime real.</p>
       <div style="margin-top:28px;display:flex;flex-direction:column;gap:12px">
         <div class="pill" style="justify-content:flex-start;width:fit-content">
           <div class="pill-dot"></div>
-          Actualització instantània entre dispositius
+          <span data-i18n="rt_pill1">Actualització instantània entre dispositius</span>
         </div>
         <div class="pill" style="justify-content:flex-start;width:fit-content">
           <div class="pill-dot"></div>
-          Funciona en iOS, Android i web
+          <span data-i18n="rt_pill2">Funciona en iOS, Android i web</span>
         </div>
         <div class="pill" style="justify-content:flex-start;width:fit-content">
           <div class="pill-dot"></div>
-          Reconexió automàtica si es perd la senyal
+          <span data-i18n="rt_pill3">Reconexió automàtica si es perd la senyal</span>
         </div>
       </div>
     </div>
@@ -363,18 +399,85 @@
 <section class="privacy-section">
   <div class="privacy-inner">
     <div class="reveal">
-      <div class="section-label" style="color:var(--green)">Privacitat</div>
-      <h2 class="section-title">Les dades del teu bebè<em>són teves.</em></h2>
-      <p class="section-sub" style="margin:0 auto;text-align:center">Les dades de salut del teu fill mereixen el màxim respecte. Cap anunci, cap venda de dades, cap sorpresa.</p>
+      <div class="section-label" style="color:var(--green)" data-i18n="priv_label">Privacitat</div>
+      <h2 class="section-title" data-i18n-html="priv_title">Les dades del teu bebè<em>són teves.</em></h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center" data-i18n="priv_sub">Les dades de salut del teu fill mereixen el màxim respecte. Cap anunci, cap venda de dades, cap sorpresa.</p>
     </div>
     <div class="privacy-pills reveal reveal-delay-1">
-      <div class="pill"><div class="pill-dot"></div>Sense anuncis, mai</div>
-      <div class="pill"><div class="pill-dot"></div>Dades xifrades (TLS + AES-256)</div>
-      <div class="pill"><div class="pill-dot"></div>Accés exclusiu de la teva família</div>
-      <div class="pill"><div class="pill-dot"></div>Exporta les teves dades quan vulguis</div>
-      <div class="pill"><div class="pill-dot"></div>Elimina el compte i tot s'esborra</div>
-      <div class="pill"><div class="pill-dot"></div>Compleix RGPD · dades de salut</div>
+      <div class="pill"><div class="pill-dot"></div><span data-i18n="priv_p1">Sense anuncis, mai</span></div>
+      <div class="pill"><div class="pill-dot"></div><span data-i18n="priv_p2">Dades xifrades (TLS + AES-256)</span></div>
+      <div class="pill"><div class="pill-dot"></div><span data-i18n="priv_p3">Accés exclusiu de la teva família</span></div>
+      <div class="pill"><div class="pill-dot"></div><span data-i18n="priv_p4">Exporta les teves dades quan vulguis</span></div>
+      <div class="pill"><div class="pill-dot"></div><span data-i18n="priv_p5">Elimina el compte i tot s'esborra</span></div>
+      <div class="pill"><div class="pill-dot"></div><span data-i18n="priv_p6">Compleix RGPD · dades de salut</span></div>
     </div>
+  </div>
+</section>
+
+<!-- ── BLOG ────────────────────────────────────────── -->
+<section class="section blog-section" id="blog">
+  <div class="reveal">
+    <div class="section-label" data-i18n="blog_label">Blog</div>
+    <h2 class="section-title" data-i18n-html="blog_title">Recursos per a <em>nous pares.</em></h2>
+    <p class="section-sub" data-i18n="blog_sub">Articles escrits per pares, per a pares. Consells pràctics per als primers mesos.</p>
+  </div>
+  <div class="blog-grid">
+
+    <a href="/blog/primer-mes-bebe.html" class="blog-card reveal reveal-delay-1">
+      <div class="blog-card-img">
+        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600&h=340&q=80"
+             alt="Bebè dormint a la nit" loading="lazy">
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-kicker" data-i18n="blog1_kicker">Primeres setmanes</div>
+        <h3 data-i18n="blog1_title">Les 30 primeres nits amb el teu nadó</h3>
+        <p data-i18n="blog1_desc">Guia emocional i pràctica per sobreviure i gaudir les primeres setmanes amb un nou membre a la família.</p>
+        <span class="blog-card-read" data-i18n="blog_readmore">Llegir →</span>
+      </div>
+    </a>
+
+    <a href="/blog/registre-tomes.html" class="blog-card reveal reveal-delay-2">
+      <div class="blog-card-img">
+        <img src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?auto=format&fit=crop&w=600&h=340&q=80"
+             alt="Mare consultant l'app al mòbil mentre dona el biberó" loading="lazy">
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-kicker" data-i18n="blog2_kicker">Lactància i biberó</div>
+        <h3 data-i18n="blog2_title">Com saber si el teu bebè menja prou</h3>
+        <p data-i18n="blog2_desc">Signes de que el bebè s'alimenta bé, quantes tomes al dia i com registrar-les per parlar-ne amb el pediatre.</p>
+        <span class="blog-card-read" data-i18n="blog_readmore">Llegir →</span>
+      </div>
+    </a>
+
+    <a href="/blog/corba-creixement.html" class="blog-card reveal reveal-delay-3">
+      <div class="blog-card-img">
+        <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f004?auto=format&fit=crop&w=600&h=340&q=80"
+             alt="Bebè al pediatra, control de pes" loading="lazy">
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-kicker" data-i18n="blog3_kicker">Creixement</div>
+        <h3 data-i18n="blog3_title">Corba de creixement OMS: guia per a pares</h3>
+        <p data-i18n="blog3_desc">Què volen dir els percentils, com s'interpreten i per què el pes sol no ho explica tot.</p>
+        <span class="blog-card-read" data-i18n="blog_readmore">Llegir →</span>
+      </div>
+    </a>
+
+    <a href="/blog/app-parella-bebe.html" class="blog-card reveal reveal-delay-1">
+      <div class="blog-card-img">
+        <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=600&h=340&q=80"
+             alt="Parella feliç amb el seu nadó" loading="lazy">
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-kicker" data-i18n="blog4_kicker">Parella</div>
+        <h3 data-i18n="blog4_title">Sincronitzar-se amb la parella quan arriba el bebè</h3>
+        <p data-i18n="blog4_desc">Comunicar-se quan esteu els dos esgotats és difícil. Aquí expliquem com una app senzilla va canviar la nostra dinàmica.</p>
+        <span class="blog-card-read" data-i18n="blog_readmore">Llegir →</span>
+      </div>
+    </a>
+
+  </div>
+  <div style="text-align:center;margin-top:48px">
+    <a href="/blog/" class="btn-ghost" data-i18n="blog_all">Veure tots els articles →</a>
   </div>
 </section>
 
@@ -382,15 +485,15 @@
 <section class="cta-section">
   <div class="cta-inner">
     <div class="reveal">
-      <div class="section-label" style="text-align:center">Comença avui</div>
-      <h2 class="section-title">Perquè les 3h<em>ja són prou difícils.</em></h2>
-      <p class="section-sub" style="text-align:center">Gratuït, sense instal·lació, sense targeta de crèdit. Tens un bebè, no tens temps.</p>
+      <div class="section-label" style="text-align:center" data-i18n="cta_label">Comença avui</div>
+      <h2 class="section-title" data-i18n-html="cta_title">Perquè les 3h<em>ja són prou difícils.</em></h2>
+      <p class="section-sub" style="text-align:center" data-i18n="cta_sub">Gratuït, sense instal·lació, sense targeta de crèdit. Tens un bebè, no tens temps.</p>
       <div style="display:flex;justify-content:center;margin-top:40px">
-        <a href="https://app.quantiloca.com" class="btn-primary" style="font-size:1.05rem;padding:16px 36px">
+        <a href="https://app.quantiloca.com" class="btn-primary" style="font-size:1.05rem;padding:16px 36px" data-i18n="cta_btn">
           🍼 Accedir a Quan Li Toca
         </a>
       </div>
-      <p style="margin-top:16px;font-size:0.8rem;color:var(--ink3);text-align:center">
+      <p style="margin-top:16px;font-size:0.8rem;color:var(--ink3);text-align:center" data-i18n="cta_proof">
         Ja usat per pares des del primer dia 🥰
       </p>
     </div>
@@ -400,11 +503,13 @@
 <!-- ── FOOTER ─────────────────────────────────────── -->
 <footer>
   <div class="footer-logo">Quan Li Toca</div>
-  <div>Fet amb ❤️ per pares, per a pares.</div>
+  <div data-i18n="footer_tag">Fet amb ❤️ per pares, per a pares.</div>
   <div>
-    <a href="https://app.quantiloca.com">Accedir</a>
+    <a href="https://app.quantiloca.com" data-i18n="footer_link1">Accedir</a>
     &nbsp;·&nbsp;
-    <a href="https://app.quantiloca.com/#privacy">Privacitat</a>
+    <a href="/blog/" data-i18n="footer_blog">Blog</a>
+    &nbsp;·&nbsp;
+    <a href="https://app.quantiloca.com/#privacy" data-i18n="footer_link2">Privacitat</a>
   </div>
 </footer>
 
