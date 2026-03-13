@@ -5,11 +5,11 @@
 /* ── I18N TRANSLATIONS ──────────────────────── */
 const TRANSLATIONS = {
   ca: {
-    _title: 'Quan Li Toca — Registre intel·ligent per al teu bebè',
-    _desc:  'Registra tomes, cacades, siestas i creixement. Sincronitzat amb la teva parella en temps real. Gratuït, sense anuncis, sense venda de dades.',
+    _title: 'Menja. Caga. Dorm. — Nosaltres recordem l\'hora de la toma',
+    _desc:  'Registra tomes, cacades i creixement en un tap. Sincronitzat amb la teva parella en temps real. Gratuït, sense anuncis, sense venda de dades.',
     nav_cta: 'Accedir →',
     badge:    'Gratuït · Sense anuncis · Privat',
-    h1:       'El registre del teu<em>bebè, en temps real.</em>',
+    h1:       'Menja. Caga. Dorm.<em>Nosaltres recordem l\'hora de la toma.</em>',
     hero_sub: "Tomes, cacades, siestas i creixement — tot en un lloc, sincronitzat a l'instant amb la teva parella. Sense oblidar res a les 3 de la matinada.",
     cta_hero:  '🍼 Comença ara — és gratis',
     cta_ghost: 'Veure funcionalitats',
@@ -95,11 +95,11 @@ const TRANSLATIONS = {
   },
 
   es: {
-    _title: 'Quan Li Toca — Registro inteligente para tu bebé',
-    _desc:  'Registra tomas, cacas, siestas y crecimiento. Sincronizado con tu pareja en tiempo real. Gratis, sin anuncios, sin venta de datos.',
+    _title: 'Come. Caga. Duerme. — Nosotros recordamos la hora de la toma',
+    _desc:  'Registra tomas, cacas y crecimiento en un tap. Sincronizado con tu pareja en tiempo real. Gratis, sin anuncios, sin venta de datos.',
     nav_cta: 'Acceder →',
     badge:    'Gratuito · Sin anuncios · Privado',
-    h1:       'El registro de tu<em>bebé, en tiempo real.</em>',
+    h1:       'Come. Caga. Duerme.<em>Nosotros recordamos la hora de la toma.</em>',
     hero_sub: 'Tomas, cacas, siestas y crecimiento — todo en un lugar, sincronizado al instante con tu pareja. Sin olvidar nada a las 3 de la madrugada.',
     cta_hero:  '🍼 Empieza ahora — es gratis',
     cta_ghost: 'Ver funcionalidades',
@@ -185,11 +185,11 @@ const TRANSLATIONS = {
   },
 
   en: {
-    _title: 'Quan Li Toca — Smart baby tracker for new parents',
-    _desc:  'Track feedings, diapers, naps and growth. Synced with your partner in real time. Free, no ads, no data selling.',
+    _title: 'Eat. Poop. Sleep. — We remember the feeding time',
+    _desc:  'Track feedings, diapers and growth with one tap. Synced with your partner in real time. Free, no ads, no data selling.',
     nav_cta: 'Sign in →',
     badge:    'Free · No ads · Private',
-    h1:       'Track your<em>baby, in real time.</em>',
+    h1:       'Eat. Poop. Sleep.<em>We remember the feeding time.</em>',
     hero_sub: "Feedings, diapers, naps and growth — all in one place, synced instantly with your partner. Never forget anything at 3am.",
     cta_hero:  "🍼 Start now — it's free",
     cta_ghost: 'See features',
